@@ -1,0 +1,7 @@
+<div class="terrain-mars">
+    <div *ngFor="let row of rows; let rowIndex = index" class="terrain-row">
+      <div *ngFor="let col of cols; let colIndex = index" class="terrain-cell">
+        ({{ rowIndex }}, {{ colIndex }})
+      </div>
+    </div>
+  </div>  

@@ -1,20 +1,14 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
-    selector: 'app-terrain-mars',
-    template: `
-        <div class="terrain-mars">
-            <div *ngFor="let row of rows; let rowIndex = index" class="terrain-row">
-                <div *ngFor="let col of cols; let colIndex = index" class="terrain-cell">
-                    {{ rowIndex }}, {{ colIndex }}
-                </div>
-            </div>
-        </div>
-    `,
-    styleUrls: ['./terrain-mars.component.css'],
-    standalone: true,
+  selector: 'app-terrain-mars',
+  templateUrl: './terrain-mars.component.html',
+  styleUrls: ['./terrain-mars.component.css'],
+  standalone: true,
+  imports: [CommonModule]
 })
 export class TerrainMars {
-    rows = Array.from({ length: 5 });
-    cols = Array.from({ length: 5 });
+  rows = Array(5).fill(0);
+  cols = Array(5).fill(0);
 }

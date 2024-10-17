@@ -1,19 +1,18 @@
 
 .botao {
-    width: 100px;           /* Largura do botão */
-    height: 100px;          /* Altura do botão */
-    border-radius: 50%;     /* Borda circular */
-    background-color: #333; /* Cinza escuro */
-    border: 5px solid red;  /* Borda vermelha */
-    color: white;           /* Cor do texto */
-    font-size: 36px;        /* Tamanho da letra */
+    width: 100px; 
+    height: 100px;          
+    border-radius: 50%;     
+    background-color: #333; 
+    border: 5px solid red;  
+    color: white;          
+    font-size: 36px;       
     display: flex;
-    justify-content: center; /* Centraliza o texto horizontalmente */
-    align-items: center;     /* Centraliza o texto verticalmente */
-    cursor: pointer;        /* Cursor de ponteiro ao passar o mouse */
-    transition: background-color 0.01s ease; /* Animação suave para a mudança de cor */
+    justify-content: center; 
+    align-items: center;    
+    cursor: pointer;        
+    transition: background-color 0.01s ease; 
 }
-
 .botao:active {
-    background-color: red;  /* Cor do botão ao pressionar */
+    background-color: red;  
 }
