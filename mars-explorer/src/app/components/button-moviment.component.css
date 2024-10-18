@@ -6,13 +6,26 @@
     background-color: #333; 
     border: 5px solid red;  
     color: white;          
-    font-size: 36px;       
+    font-size: 36px;    
+    font-family: Arial, Helvetica, sans-serif;   
     display: flex;
     justify-content: center; 
     align-items: center;    
-    cursor: pointer;        
-    transition: background-color 0.01s ease; 
+    cursor: pointer;         
+    margin-bottom: 100px;
+    box-shadow: 7px 7px 0 #000
 }
 .botao:active {
-    background-color: red;  
+    background-color: red; 
+    transition: background-color 0.1 ease-in;
+}
+.botao:not(:active) {
+    background-color: #333 ;
+    transition: background-color 0.2s ease-out; 
+}
+@media (max-width: 730px) {
+    .botao {
+    width: 80px;
+    height: 80px;
+    }
 }

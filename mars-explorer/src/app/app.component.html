@@ -1,14 +1,20 @@
 <div class="geral">
   <div class="titulo">
-    <h1>MARS EXPLORER</h1>
+    <h1 style="font-size: 48px; color: white; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+      MARS EXPLORER
+  </h1>
   </div>
-  <div class="botões" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-  <app-button-moviment type="M"></app-button-moviment>
-  <app-button-moviment type="L"></app-button-moviment>
-  <app-button-moviment type="R"></app-button-moviment>
-  </div>
-  <div class ="terreno">
-  <app-terrain-mars></app-terrain-mars>
+  
+  <div class="elementos">
+    <div class="terreno">
+      <app-terrain-mars></app-terrain-mars>
+    </div>  
+    
+    <div class="botões">
+      <app-button-moviment type="M"></app-button-moviment>
+      <app-button-moviment type="L"></app-button-moviment>
+      <app-button-moviment type="R"></app-button-moviment>
+    </div>
   </div>
 </div>
 <router-outlet />
