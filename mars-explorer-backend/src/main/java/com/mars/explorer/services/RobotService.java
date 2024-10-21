@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class RobotService {
-    private Robot robot = new Robot():
+    private Robot robot = new Robot();
 
     public Robot getRobot() {
         return robot;

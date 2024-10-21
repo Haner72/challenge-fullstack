@@ -1,10 +1,13 @@
 package com.mars.explorer.models;
 
+import com.fasterxml.jackson.annotaion.JsonProperty;
+
 public class Robot {
     private int x;
     private int y;
     private String direction;
 
+    private static final String[] DIRECTIONS = {"N", "E", "S", "W"};
 
     public Robot() {
         this.x = 0;
@@ -12,20 +15,23 @@ public class Robot {
         this.direction = "N";
     }
 
-    public int getx() {
+    @JsonProperty("x")
+    public int getX() {
         return x;
     }
 
+    @JsonProperty("y")
     public int getY() {
         return y;
     }
 
+    @JsonProperty("direction")
     public String getDirection() {
         return direction;
     }
 
     public void setX(int x) {
-        trhis.x = x;
+        this.x = x;
     }
 
     public void setY(int y) {

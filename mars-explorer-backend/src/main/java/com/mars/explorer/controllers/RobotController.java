@@ -8,26 +8,31 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/robot")
 public class RobotController {
+    
     @Autowired
     private RobotService robotService;
+    private Robot robot;
 
     @GetMapping
     public Robot getRobotPosition() {
         return robotService.getRobot();
     }
 
-    @PostMapping("/move")
+    @PostMapping("/m")
     public void moveForward() {
         robotService.moveForward();
+        System.out.println(robotService.getRobot());
     }
-
-    @PostMapping("/left")
+    
+    @PostMapping("/l")
     public void turnLeft() {
         robotService.turnLeft();
+        System.out.println(robotService.getRobot());
     }
-
-    @PostMapping("/right")
+    
+    @PostMapping("/r")
     public void turnRight() {
         robotService.turnRight();
+        System.out.println(robotService.getRobot());
     }
 }
