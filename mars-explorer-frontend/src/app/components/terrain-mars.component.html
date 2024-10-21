@@ -2,6 +2,9 @@
   <div class="grid">
     <div *ngFor="let row of rows; let rowIndex = index" class="terrain-row">
       <div *ngFor="let col of cols; let colIndex = index" class="terrain-cell">
+        <div class="robot" style="visibility: hidden;">
+          🤖
+        </div>
       </div>
     </div>
   </div>

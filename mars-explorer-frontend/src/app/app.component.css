@@ -19,20 +19,17 @@
     margin-top: 10px;
 }
 
-@media (max-width: 730px) {
+@media (max-width: 800px) {
     .elementos {
         flex-direction: column;
         align-items: center;
-        gap: 100px;
+        gap: 50px;
     }
 
     .botões {
         flex-direction: row;
-        margin-top: 20px;
+        margin-top: 10px;
         gap: 75px;
-    }
-    .terreno {
-        margin-top: 25px;
     }
 }
 

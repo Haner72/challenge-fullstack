@@ -23,7 +23,15 @@
   box-shadow: 7px 7px 0 #000
 }
 
-@media (max-width: 730px) {
+.robot {
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@media (max-width: 800px) {
   .terrain-cell {
     width: 75px;
     height: 75px;
