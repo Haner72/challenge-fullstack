@@ -13,4 +13,3 @@ export class ButtonMoviment {
         console.log(`Botão ${this.type} pressionado!`);
     }
 }
-

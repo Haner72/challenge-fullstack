@@ -1,13 +1,11 @@
 package com.mars.explorer.models;
 
-import com.fasterxml.jackson.annotaion.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Robot {
     private int x;
     private int y;
     private String direction;
-
-    private static final String[] DIRECTIONS = {"N", "E", "S", "W"};
 
     public Robot() {
         this.x = 0;

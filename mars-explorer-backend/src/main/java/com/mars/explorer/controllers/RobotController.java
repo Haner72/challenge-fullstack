@@ -11,9 +11,8 @@ public class RobotController {
     
     @Autowired
     private RobotService robotService;
-    private Robot robot;
 
-    @GetMapping
+    @GetMapping("/status")
     public Robot getRobotPosition() {
         return robotService.getRobot();
     }

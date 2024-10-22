@@ -7,7 +7,7 @@ import { Robot } from './robot.model';
   providedIn: 'root',
 })
 export class RobotService {
-  private apiUrl = '/api/robot';
+  private apiUrl = '/api/robot/status';
 
   constructor(private http: HttpClient) {}
 

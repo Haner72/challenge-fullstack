@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ButtonMoviment } from './components/button-moviment';
-import { TerrainMars } from './components/terrain-mars';
+import { ButtonMoviment } from './components/button/button-moviment';
+import { TerrainMars } from './components/terrain/terrain-mars';
 import { CommonModule } from '@angular/common';
 
 @Component({

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Robot } from '/models/Robot';
+import { Robot } from './robot.model';
 
 @Component({
   selector: 'app-robot',
@@ -9,7 +9,7 @@ import { Robot } from '/models/Robot';
   styleUrls: ['./robot.component.css']
 })
 export class RobotComponent {
-  posicao: Robot;
+  posicao: Robot | null = null;
 
   constructor(private http: HttpClient) { 
     this.updatePosition();
