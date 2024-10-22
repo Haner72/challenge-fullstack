@@ -18,20 +18,21 @@ public class RobotController {
     }
 
     @PostMapping("/m")
-    public void moveForward() {
+    public Robot moveForward() {
         robotService.moveForward();
-        System.out.println(robotService.getRobot());
+        return robotService.getRobot();
     }
     
     @PostMapping("/l")
-    public void turnLeft() {
+    public Robot turnLeft() {
         robotService.turnLeft();
-        System.out.println(robotService.getRobot());
+        return robotService.getRobot();
     }
     
     @PostMapping("/r")
-    public void turnRight() {
+    public Robot turnRight() {
         robotService.turnRight();
-        System.out.println(robotService.getRobot());
+        return robotService.getRobot();
     }
+    
 }

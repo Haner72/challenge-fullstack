@@ -11,24 +11,23 @@ public class RobotService {
         return robot;
     }
 
-public void moveForward() {
-    switch (robot.getDirection()) {
-        case "N":
-            if (robot.getY() < 4) robot.setY(robot.getY() + 1);
-            break;
-        case "E":
-            if (robot.getX() < 4) robot.setY(robot.getY() + 1);
-            break;
-        case "S":
-            if (robot.getY() < 0) robot.setY(robot.getY() - 1);
-            break;
-        case "W":
-            if (robot.getX() < 0) robot.setY(robot.getX() - 1);
-            break;
-        
+    public void moveForward() {
+        switch (robot.getDirection()) {
+            case "N":
+                if (robot.getY() < 4) robot.setY(robot.getY() + 1);
+                break;
+            case "E":
+                if (robot.getX() < 4) robot.setX(robot.getX() + 1);
+                break;
+            case "S":
+                if (robot.getY() > 0) robot.setY(robot.getY() - 1);
+                break;
+            case "W":
+                if (robot.getX() > 0) robot.setX(robot.getX() - 1);
+                break;
+        }
     }
-}
-
+    
     public void turnLeft() {
       switch (robot.getDirection()) {
             case "N":
