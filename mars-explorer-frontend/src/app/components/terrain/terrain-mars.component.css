@@ -20,7 +20,16 @@
   height: 100px;
   border: 1px solid black;
   background-color: rgb(145, 87, 87);
-  box-shadow: 7px 7px 0 #000
+  box-shadow: 7px 7px 0 #000;
+  position: relative;
+}
+
+.coordinate {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 14px;
+  color: white;
 }
 
 .robot {
@@ -35,5 +44,9 @@
   .terrain-cell {
     width: 75px;
     height: 75px;
+  }
+
+  .coordinate {
+    font-size: 10px;
   }
 }

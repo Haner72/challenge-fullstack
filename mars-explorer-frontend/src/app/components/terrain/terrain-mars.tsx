@@ -11,9 +11,9 @@ import { CommonModule } from '@angular/common';
 export class TerrainMars {
   rows = Array(5).fill(0);
   cols = Array(5).fill(0);
-  robotPosition = { x: 0, y: 0, direction: 'N'};
+  robotPosition = { x: 0, y: 0, direction: 'N' };
 
   updateRobotPosition(position: { x: number, y: number, direction: string }) {
-    this.robotPosition = position
+    this.robotPosition = position;
   }
 }

@@ -11,7 +11,7 @@ export class ButtonMoviment {
   @Output() positionUpdated = new EventEmitter<{ x: number; y: number; direction: string }>();
 
   handleClick() {
-    const endpoint = `http://localhost:4200/api/robot/${this.type.toLowerCase()}`;
+    const endpoint = `http://localhost:8080/api/robot/${this.type}`;
 
     fetch(endpoint, {
       method: 'POST',
@@ -20,8 +20,9 @@ export class ButtonMoviment {
       }
     })
     .then(response => {
+      console.log('Response', response);
       if (!response.ok) {
-        throw new Error('Network response was not ok');
+        throw new Error('O Network nao ta bem');
       }
       return response.json();
     })
@@ -35,7 +36,7 @@ export class ButtonMoviment {
       });
     })
     .catch(error => {
-      console.error('Erro ao mover o robô:', error);
+      console.error('Deu erro denovo affe', error);
     });
   }
 }

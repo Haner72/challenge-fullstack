@@ -2,7 +2,10 @@
   <div class="grid">
     <div *ngFor="let row of rows; let rowIndex = index" class="terrain-row">
       <div *ngFor="let col of cols; let colIndex = index" class="terrain-cell">
-        <div class="robot" [style.visibility]="robotPosition.x === colIndex && robotPosition.y === rowIndex ? 'visible' :  'hidden'">
+        <div class="coordinate">
+          {{ rowIndex - 2 }},{{ colIndex - 2 }}
+        </div>
+        <div class="robot" [style.visibility]="robotPosition.x === colIndex - 2 && robotPosition.y === rowIndex - 2 ? 'visible' : 'hidden'">
           🤖
         </div>
       </div>
