@@ -1,0 +1,12 @@
+{
+  "name": "mars-explorer",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+    "start:frontend": "cd mars-explorer-frontend && npm start",
+    "start:backend": "cd mars-explorer-backend && node server.js"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0"
+  }
+}
