@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { TerrainMars } from '../terrain/terrain-mars';
 
 @Component({
   selector: 'app-button-moviment',
@@ -6,13 +7,13 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./button-moviment.component.css'],
   standalone: true
 })
+
 export class ButtonMoviment {
   @Input() type!: string;
   @Output() positionUpdated = new EventEmitter<{ x: number; y: number; direction: string }>();
 
   handleClick() {
-    const endpoint = `http://localhost:8080/api/robot/${this.type}`;
-
+    const endpoint = `http://localhost:8080/api/robot/${this.type.toLowerCase()}`;
     fetch(endpoint, {
       method: 'POST',
       headers: {

@@ -1,0 +1,4 @@
+com\mars\explorer\controllers\RobotController.class
+com\mars\explorer\services\RobotService.class
+com\mars\explorer\MEBApplication.class
+com\mars\explorer\models\Robot.class

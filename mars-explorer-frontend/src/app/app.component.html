@@ -7,13 +7,13 @@
   
   <div class="elementos">
     <div class="terreno">
-      <app-terrain-mars></app-terrain-mars>
+      <app-terrain-mars [robotPosition]="robotPosition"></app-terrain-mars>
     </div>  
     
     <div class="botões">
-      <app-button-moviment type="L"></app-button-moviment>
-      <app-button-moviment type="M"></app-button-moviment>
-      <app-button-moviment type="R"></app-button-moviment>
+      <app-button-moviment type="L" (positionUpdated)="updateRobotPosition($event)"></app-button-moviment>
+      <app-button-moviment type="M" (positionUpdated)="updateRobotPosition($event)"></app-button-moviment>
+      <app-button-moviment type="R" (positionUpdated)="updateRobotPosition($event)"></app-button-moviment>
     </div>
   </div>
 </div>

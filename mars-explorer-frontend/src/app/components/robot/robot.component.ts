@@ -33,7 +33,7 @@ export class RobotComponent {
     });
   }
 
-  girarDireita(): void {
+  turnRight(): void {
     this.http.post<void>('/api/robot/r', {}).subscribe(() => {
       this.updatePosition();
     });
